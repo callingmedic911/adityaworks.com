@@ -1,0 +1,37 @@
+/* Aditya */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html,
+body,
+.main {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	background: linear-gradient(45deg, #0876ff 0%, #1e9fcf 80%, #1baac7 110%);
+	float: right;
+	width: 75%;
+	font-size: 32px;
+	font-weight: 400;
+	color: rgba(255,255,255,0.8);
+}
+
+.main .desc {
+	margin-left: 60px;
+}
+
+.profile {
+	width: 300px;
+	border: 6px solid #fff;
+	border-radius: 150px;
+	margin-left: -150px;
+}
