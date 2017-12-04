@@ -1,10 +1,10 @@
 /* Aditya */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 
 html,
 body,
-.background {
+.segment {
 	font-family: 'Roboto Condensed', sans-serif;
 	height: 100%;
 }
@@ -20,8 +20,11 @@ a {
 	text-decoration: none;
 }
 
-.background {
+.gradient {
 	background: linear-gradient(45deg, #0876ff 0%, #1e9fcf 80%, #1baac7 110%);
+}
+
+.segment {
 	float: right;
 	width: 75%;
 	font-size: 32px;
@@ -66,6 +69,50 @@ a {
 .profile {
 	width: 300px;
 	border: 6px solid #fff;
-	border-radius: 150px;
+	border-radius: 160px;
 	margin-left: -150px;
+}
+
+/* Portfolio Page */
+
+.container {
+	width: 960px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.logo {
+	font-size: 22px;
+}
+
+.logo img {
+	width: 42px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	margin-right: 16px;
+	vertical-align: middle;
+}
+
+.portfolio .content {
+	line-height: 1.4;
+}
+
+.portfolio .content a {
+	color: #148de4;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+.portfolio .desc {
+	width: 50%;
+}
+
+.portfolio .screenshot {
+	width: 400px;
+	padding: 30px;
+	background: #1cb8cacc;
+	border-radius: 5px 5px 0 0;
+	float: left;
+	margin-right: 30px;
 }
