@@ -1,11 +1,11 @@
 /* Aditya */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 html,
 body,
-.main {
-	font-family: 'Roboto', sans-serif;
+.background {
+	font-family: 'Roboto Condensed', sans-serif;
 	height: 100%;
 }
 
@@ -14,9 +14,13 @@ body {
 	padding: 0;
 }
 
-.main {
-	display: flex;
-	align-items: center;
+a {
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.background {
 	background: linear-gradient(45deg, #0876ff 0%, #1e9fcf 80%, #1baac7 110%);
 	float: right;
 	width: 75%;
@@ -25,8 +29,38 @@ body {
 	color: rgba(255,255,255,0.8);
 }
 
+.main {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.main img {
+	vertical-align: middle;
+}
+
 .main .desc {
-	margin-left: 60px;
+	display: inline-block;
+	margin: 0 0 0 60px;
+	vertical-align: middle;
+}
+
+.main .links {
+	margin-left: 30%; 
+}
+
+.links a {
+	display: inline-block;
+	padding: 8px;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.links a:hover {
+	background: rgba(0,0,0,0.3);
 }
 
 .profile {
