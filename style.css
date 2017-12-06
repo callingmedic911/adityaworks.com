@@ -94,6 +94,31 @@ a {
 	vertical-align: middle;
 }
 
+.portfolio header {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+.portfolio section {
+	display: table;
+	margin-bottom: 40px;
+}
+
+.portfolio section.grid {
+	display: inline-block;
+	width: 48.5%;
+}
+
+.portfolio section:nth-of-type(even) {
+	margin-right: 2.6%;
+}
+
+.portfolio section.grid img {
+	width: 100%;
+	float: none;
+	box-sizing: border-box;
+}
+
 .portfolio .content {
 	line-height: 1.4;
 }
@@ -115,4 +140,12 @@ a {
 	border-radius: 5px 5px 0 0;
 	float: left;
 	margin-right: 30px;
+}
+
+.portfolio .screenshot.lyftdesk {
+	background: #9bbcff;
+}
+
+.portfolio .screenshot.laurbana {
+	background: #ffa5a5;
 }
