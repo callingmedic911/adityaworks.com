@@ -195,6 +195,11 @@ a:hover {
 	width: 50%;
 }
 
+.portfolio .date {
+	font-size: 14px;
+    opacity: 0.6;
+} 
+
 .portfolio .screenshot {
 	width: 400px;
 	padding: 30px;
