@@ -230,8 +230,8 @@ a:hover {
 
 @media only screen and (max-width: 910px) {
 	.segment {
-		height: calc(100% - 187.5px);
-		margin-top: 187.5px;
+		height: calc(100% - 167.5px);
+		margin-top: 167.5px;
 		width: 100%;
 		font-size: 24px;
 	}
@@ -241,7 +241,7 @@ a:hover {
 		transform: none;
 		text-align: center;
 		text-align: center;
-		padding-top: 150px;
+		padding-top: 130px;
 	}
 
 	.profile {
@@ -249,7 +249,7 @@ a:hover {
 		left: 50%;
 		top: 0;
 		width: 175px;
-		top: 100px;
+		top: 80px;
 		margin-left: -87.5px;
 	}
 
