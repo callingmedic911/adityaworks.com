@@ -230,7 +230,7 @@ a:hover {
 
 @media only screen and (max-width: 910px) {
 	.segment {
-		height: calc(100% - 187.5px)
+		height: calc(100% - 187.5px);
 		margin-top: 187.5px;
 		width: 100%;
 		font-size: 24px;
