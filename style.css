@@ -271,6 +271,10 @@ a:hover {
 		width: 100%;
 	}
 
+	.portfolio section.first > img {
+		margin-bottom: 20px;
+	}
+
 	.portfolio .row section:nth-of-type(1) {
 		margin-right: 0;
 	}
