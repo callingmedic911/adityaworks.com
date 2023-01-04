@@ -1,0 +1,55 @@
+html,
+body {
+  height: 98vh;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.print:last-child {
+  page-break-after: auto;
+}
+
+.home > .container {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+}
+
+.home > .container > .image-with-links > img {
+  width: 140px;
+}
+
+.home > .container > .image-with-links > ul {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home > .container > .image-with-links > ul > li {
+  text-align: center;
+}
+
+.portfolio-projects .portfolio-project .portfolio-project-tags {
+  font-size: 0.9em;
+}
+
+nav,
+.load-more,
+.view-portfolio {
+  display: none;
+}
+
+.footnote,
+.footnotes,
+.portfolio-project.hidden {
+  display: initial !important;
+}
+
+.footnote-divider {
+  display: block;
+}

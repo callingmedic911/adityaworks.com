@@ -1,0 +1,314 @@
+@import url(/assets/css/normalize.css);
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Nice, beautiful anchor links */
+a {
+  color: #0074d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #001f3f;
+  text-decoration: underline;
+}
+
+a.button, button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+a.button:hover, button:hover {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+sup.small {
+  font-size: 0.5em;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+div > p:first-child {
+  margin-top: 0;
+}
+
+.hidden,
+.footnote-divider,
+.footnote,
+.footnotes {
+  display: none !important;
+}
+
+.full-page {
+  padding: 0 20px 20px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Homepage */
+
+.home > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 40px 20px;
+  height: 100%;
+  gap: 40px;
+}
+
+.home >.container > div:last-child {
+  font-size: 1.2em;
+  flex: 2;
+}
+
+.home >.container > .image-with-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.home >.container > .image-with-links > img {
+  background: #ddd;
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+}
+
+.home >.container > .image-with-links > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: left;
+  font-size: 0.9em;
+}
+
+/* .home >.container > .image-with-links > ul > li {
+  margin-left: 16px;
+} */
+
+li.blog-icon::before {
+  content: "📝";
+}
+
+li.github-icon::before {
+  content: "🐙";
+}
+
+li.linkedin-icon::before {
+  content: "👨‍💼";
+}
+
+li.twitter-icon::before {
+  content: "🐦";
+}
+
+li.mastodon-icon::before {
+  content: "🐘";
+}
+
+li.email-icon::before {
+  content: "✉️";
+}
+
+.home .portfolio-projects .portfolio-project h2 {
+  font-size: 1em;
+}
+
+.home .portfolio-projects .portfolio-project .project-meta {
+  display: flex;
+  flex-direction: column;
+  flex: 1
+}
+
+.home .portfolio-projects .portfolio-project .portfolio-project-side-info {
+  flex: 1;
+  font-size: 0.7em;
+}
+
+.home .portfolio-projects .portfolio-project .portfolio-project-tags > span {
+  font-size: 0.6em;
+}
+
+/* Portfolio Page */
+
+.portfolio-header {
+  margin: 0 0 40px 0;
+}
+
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "project";
+  gap: 20px;
+}
+
+.portfolio-projects .portfolio-project {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #ddd;
+  border-radius: 4px;
+}
+
+.portfolio-projects .portfolio-project .portfolio-img {
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.portfolio-projects .portfolio-project .portfolio-img.redwoodjs {
+  background-color: #fdf8f6;
+}
+
+.portfolio-projects .portfolio-project .portfolio-img.teamstream {
+  background-color: #090c10;
+}
+
+.portfolio-projects .portfolio-project .portfolio-img.tape {
+  padding: 20px 50px;
+}
+
+.portfolio-projects .portfolio-project img {
+  /* background: #ddd; */
+  object-fit: contain;
+  width: 100%;
+  height: 180px;
+}
+
+.portfolio-projects .portfolio-project .portfolio-project-side-info {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.portfolio-projects .portfolio-project .portfolio-project-description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 12px 20px;
+}
+
+.portfolio-projects .portfolio-project .project-details-with-link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+.portfolio-projects .portfolio-project .project-details-with-link .link {
+  display: flex;
+  align-items: end;
+  flex: 1;
+}
+
+.portfolio-projects .portfolio-project h2 {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+
+.portfolio-projects .portfolio-project p, .portfolio-projects .portfolio-project ul  {
+  font-size: 0.9em;
+  margin: 0 0 6px 0;
+}
+
+.portfolio-projects .portfolio-project .portfolio-project-tags {
+  margin: 6px 0;
+}
+
+.portfolio-projects .portfolio-project .portfolio-project-tags > span {
+  display: inline-block;
+  padding: 2px 4px;
+  border: 2px solid #0074d9;
+  border-radius: 4px;
+  color: #0074d9;
+  text-decoration: none;
+  font-size: 0.7em;
+  margin: 0 4px 4px 0;
+}
+
+.load-more, .view-portfolio {
+  display: block;
+  margin: 16px auto;
+}
+
+/* On mobile devices */
+
+@media only screen and (max-width: 600px) {
+  .home >.container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .home >.container > .image-with-links > ul {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .home >.container > .image-with-links > ul > li {
+    text-align: center;
+  }
+
+  .home >.container > .image-with-links > img {
+    width: 140px;
+  }
+
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  a {
+    color: #7fdbff;
+  }
+
+  a:hover {
+    color: #39cccc;
+  }
+
+  .home >.container > .image-with-links > img {
+    border: 4px solid #555;
+  }
+
+  .portfolio-projects .portfolio-project {
+    border: 4px solid #555;
+  }
+
+  .portfolio-projects .portfolio-project .portfolio-project-tags > span {
+    border: 2px solid #7fdbff;
+    color: #7fdbff;
+  }
+}

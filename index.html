@@ -1,31 +1,205 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-	<meta charset=utf-8>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name=description content="Hi! I'm Aditya. Software Engineer. Android and Web Developer.">
-	<title>Aditya Works</title>
-	<meta name=theme-color content=#1690e1>
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1690e1">
-	<link rel=author href=https://plus.google.com/+AdityaPandey911>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="segment gradient">
-		<div class="main">
-			<img class="profile" src="images/profile.jpg">
-			<p class="desc">Hi! I'm Aditya. <span class="icon-coffee"></span><br/><br/>Software Engineer.<br/>Android and Web Developer.<br/>See my <a href="https://blog.adityaworks.com">blog</a> &amp; <a href="portfolio">portfolio <span class="icon-long_arrow_right"></span></a></p>
-			<div class="links">
-				<a rel="me" href="https://updates.adityaworks.com"><span class="icon-polywork"></span></a>
-				<a rel="me" href="https://twitter.com/callingmedic911"><span class="icon-twitter"></span></a>
-				<a rel="me" href="https://github.com/callingmedic911"><span class="icon-github"></span></a>
-				<a rel="me" href="mailto:aditya@autospace.co"><span class="icon-envelope_alt"></span></a>
-			</div>
-		</div>
-	</div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AdityaWorks.com</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" />
+
+    <meta name="description" content="Personal website of Aditya" />
+    <meta property="og:title" content="AdityaWorks.com" />
+    <meta
+      property="og:description"
+      content="Personal website of Aditya Pandey"
+    />
+    <meta
+      property="og:image"
+      content="https://adityaworks.com/images/og/og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Introduction image of Aditya's site"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://adityaworks.com" />
+    <link rel="canonical" href="https://adityaworks.com" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/my.webmanifest" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#333333"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+
+  <body class="home">
+    <div class="container">
+      <div class="image-with-links">
+        <img
+          width="180"
+          height="180"
+          src="/images/aditya_2x.webp"
+          srcset="
+            /images/aditya_1x.webp   1x,
+            /images/aditya_1_5x.webp 1.5x,
+            /images/aditya_2x.webp   2x,
+            /images/aditya_3x.webp   3x,
+            /images/aditya_4x.webp   4x
+          "
+          alt="Aditya's Photo"
+        />
+        <ul>
+          <li class="blog-icon">
+            <a href="https://blog.adityaworks.com"
+              >Blog<sup class="footnote">0</sup></a
+            >
+          </li>
+          <li class="github-icon">
+            <a href="https://github.com/callingmedic911"
+              >GitHub<sup class="footnote">1</sup></a
+            >
+          </li>
+          <li class="twitter-icon">
+            <a href="https://twitter.com/callingmedic911"
+              >Twitter<sup class="footnote">2</sup></a
+            >
+          </li>
+          <!-- <li class="mastodon-icon">
+            <a href="https://mastodon.social/@callingmedic911"
+              >Mastodon<sup class="footnote">3</sup></a
+            > -->
+          </li>
+          <li class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/aditya-pandey/"
+              >LinkedIn<sup class="footnote">3</sup></a
+            >
+          </li>
+          <li class="email-icon">
+            <a href="mailto:aditya@autospace.co"
+              >Email<sup class="footnote">4</sup></a
+            >
+          </li>
+          <!-- If you add something to list, don't forget to update footnotes -->
+        </ul>
+      </div>
+      <div>
+        <div>
+          <p>Hello. 👋</p>
+          <p>
+            My name is Aditya Pandey<sup class="small"
+              ><a
+                title="Pronunciation for the first name"
+                href="http://ipa-reader.xyz/?text=ɑːðɪθjæ"
+                >/ɑːðɪθjæ/</a
+              >
+              <a
+                title="Pronunciation for the last name"
+                href="http://ipa-reader.xyz/?text=p%C9%91%CB%90%C5%8Bde%C9%AA"
+                >/pɑːŋdeɪ/</a
+              ></sup
+            >.<br />I have worked with TypeScript, GraphQL, React, Next.js,
+            <a title="Portfolio" href="/portfolio"
+              >and more<sup class="footnote">5</sup></a
+            >.
+          </p>
+
+          <p>Here are some of my recent work.</p>
+        </div>
+
+        <div class="portfolio-projects">
+          <div class="portfolio-project">
+            <div class="portfolio-project-description">
+              <h2>RedwoodJS</h2>
+              <div class="project-meta">
+                <p class="portfolio-project-side-info">
+                  A full-stack web framework for startups.
+                </p>
+                <div class="portfolio-project-tags">
+                  <span>TypeScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="portfolio-project-description">
+              <h2>Teamstream.gg</h2>
+              <div class="project-meta">
+                <p class="portfolio-project-side-info">
+                  A platform to organize and watch ESports tournaments.
+                </p>
+                <div class="portfolio-project-tags">
+                  <span>RedwoodJS</span>
+                  <span>React</span>
+                  <span>GraphQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="portfolio-project-description">
+              <h2>Tape.sh</h2>
+              <div class="project-meta">
+                <p class="portfolio-project-side-info">
+                  macOS app to record the screen and get sharable link with just
+                  a click.
+                </p>
+                <div class="portfolio-project-tags">
+                  <span>RedwoodJS</span>
+                  <span>React</span>
+                  <span>GraphQL</span>
+                  <span>Electron</span>
+                  <span>Next.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="portfolio-project-description">
+              <h2>Tourio</h2>
+              <div class="project-meta">
+                <p class="portfolio-project-side-info">
+                  A location-aware audio guide mobile app for various tourist
+                  spots.
+                </p>
+                <div class="portfolio-project-tags">
+                  <span>Java</span>
+                  <span>React</span>
+                  <span>GraphQL</span>
+                  <span>Electron</span>
+                  <span>Next.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="button view-portfolio" href="/portfolio"
+          >View detailed portfolio</a
+        >
+      </div>
+    </div>
+    <hr class="footnote-divider" />
+    <ol start="0" class="footnotes">
+      <li>https://blog.adityaworks.com</li>
+      <li>https://github.com/callingmedic911</li>
+      <li>https://twitter.com/callingmedic911</li>
+      <!-- <li>https://mastodon.social/@callingmedic911</li> -->
+      <li>https://www.linkedin.com/in/aditya-pandey/</li>
+      <li>aditya@autospace.co</li>
+      <li>https://adityaworks.com/portfolio</li>
+    </ol>
+  </body>
 </html>
