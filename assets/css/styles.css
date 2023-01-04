@@ -265,9 +265,9 @@ li.email-icon::before {
   }
 
   .home >.container > .image-with-links > ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
-    grid-template-columns: repeat(3, 1fr);
   }
   
   .home >.container > .image-with-links > ul > li {
