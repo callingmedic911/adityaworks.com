@@ -266,7 +266,7 @@ li.email-icon::before {
 
   .home >.container > .image-with-links > ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
   }
   
