@@ -318,18 +318,6 @@ p + p {
   background-size: 100% 1.5px;
 }
 
-.links a .arrow {
-  display: inline-block;
-  transition: transform 160ms ease;
-  font-family: var(--font-serif);
-  font-style: italic;
-  margin-left: 0.1em;
-}
-
-.links a:hover .arrow {
-  transform: translate(2px, -2px);
-}
-
 /* ─── Work page ─── */
 
 .work-header {
