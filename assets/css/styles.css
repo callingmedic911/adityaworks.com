@@ -177,6 +177,11 @@ p + p {
 
 .name-button:hover { color: var(--accent); }
 
+/* While playing, neutralise the hover state so syllable highlights
+   can actually be seen — otherwise the whole word is already iris. */
+.name-button.is-playing,
+.name-button.is-playing:hover { color: var(--ink); }
+
 .name-button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 6px;
