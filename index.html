@@ -1,205 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>AdityaWorks.com</title>
+    <title>Aditya Pandey</title>
 
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="stylesheet" href="/assets/css/print.css" media="print" />
-
-    <meta name="description" content="Personal website of Aditya" />
-    <meta property="og:title" content="AdityaWorks.com" />
-    <meta
-      property="og:description"
-      content="Personal website of Aditya Pandey"
-    />
-    <meta
-      property="og:image"
-      content="https://adityaworks.com/images/og/og-image.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="Introduction image of Aditya's site"
-    />
+    <meta name="description" content="Software engineer. AI at NVIDIA. Based in Boulder, Colorado." />
+    <meta property="og:title" content="Aditya Pandey" />
+    <meta property="og:description" content="Software engineer. AI at NVIDIA. Based in Boulder, Colorado." />
+    <meta property="og:image" content="https://adityaworks.com/images/og/og-image.png?v=2026" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Aditya Pandey — software engineer working on AI research at NVIDIA." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content="https://adityaworks.com" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://adityaworks.com" />
 
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/my.webmanifest" />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#333333"
-      media="(prefers-color-scheme: dark)"
-    />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+
+    <link rel="preconnect" href="https://rsms.me" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="https://rsms.me/inter/font-files/InterVariable.woff2?v=4.0" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script>
+      // Apply stored theme pre-paint to avoid flash
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- view-source greeting — hi there 👋 -->
   </head>
 
   <body class="home">
-    <div class="container">
-      <div class="image-with-links">
-        <img
-          width="180"
-          height="180"
-          src="/images/aditya_2x.webp"
-          srcset="
-            /images/aditya_1x.webp   1x,
-            /images/aditya_1_5x.webp 1.5x,
-            /images/aditya_2x.webp   2x,
-            /images/aditya_3x.webp   3x,
-            /images/aditya_4x.webp   4x
-          "
-          alt="Aditya's Photo"
-        />
-        <ul>
-          <li class="blog-icon">
-            <a href="https://blog.adityaworks.com"
-              >Blog<sup class="footnote">0</sup></a
-            >
-          </li>
-          <li class="github-icon">
-            <a href="https://github.com/callingmedic911"
-              >GitHub<sup class="footnote">1</sup></a
-            >
-          </li>
-          <li class="twitter-icon">
-            <a href="https://twitter.com/callingmedic911"
-              >Twitter<sup class="footnote">2</sup></a
-            >
-          </li>
-          <!-- <li class="mastodon-icon">
-            <a href="https://mastodon.social/@callingmedic911"
-              >Mastodon<sup class="footnote">3</sup></a
-            > -->
-          </li>
-          <li class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/aditya-pandey/"
-              >LinkedIn<sup class="footnote">3</sup></a
-            >
-          </li>
-          <li class="email-icon">
-            <a href="mailto:aditya@autospace.co"
-              >Email<sup class="footnote">4</sup></a
-            >
-          </li>
-          <!-- If you add something to list, don't forget to update footnotes -->
-        </ul>
-      </div>
-      <div>
-        <div>
-          <p>Hello. 👋</p>
-          <p>
-            My name is Aditya Pandey<sup class="small"
-              ><a
-                title="Pronunciation for the first name"
-                href="http://ipa-reader.xyz/?text=ɑːðɪθjæ"
-                >/ɑːðɪθjæ/</a
-              >
-              <a
-                title="Pronunciation for the last name"
-                href="http://ipa-reader.xyz/?text=p%C9%91%CB%90%C5%8Bde%C9%AA"
-                >/pɑːŋdeɪ/</a
-              ></sup
-            >.<br />I have worked with TypeScript, GraphQL, React, Next.js,
-            <a title="Portfolio" href="/portfolio"
-              >and more<sup class="footnote">5</sup></a
-            >.
-          </p>
+    <main>
+      <header>
+        <h1 class="name">
+          <button type="button" class="name-button" id="name-play" aria-label="Aditya Pandey. Click to hear it pronounced.">
+            <span class="syllable" data-i="0">Adi</span><span class="syllable" data-i="1">tya</span> <span class="syllable" data-i="2">Pan</span><span class="syllable" data-i="3">dey</span>
+          </button>
+        </h1>
+        <p class="pronounce" id="pronounce">
+          <span aria-hidden="true">
+            <span class="syl" data-i="0">uh-DIT</span><span class="syl" data-i="1">-ya</span> <span class="syl" data-i="2">PAHN</span><span class="syl" data-i="3">-day</span>
+          </span>
+          <span class="pronounce-aside" aria-hidden="true">or just&nbsp;<button type="button" class="adi-button" id="adi-play" aria-label="Hear Adi pronounced"><em>Adi</em></button></span>
+          <span class="pronounce-hint" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6v4h2l3 2.5v-9L5 6H3z" />
+              <path d="M11 5.5a3.5 3.5 0 010 5" />
+            </svg>
+            <span>click the name</span>
+          </span>
+          <audio id="name-audio" src="/assets/audio/name.mp3" preload="auto"></audio>
+          <audio id="adi-audio" src="/assets/audio/adi.mp3" preload="auto"></audio>
+        </p>
+      </header>
 
-          <p>Here are some of my recent work.</p>
-        </div>
+      <section class="intro">
+        <p>
+          Software engineer working on AI research at
+          <a href="https://www.nvidia.com">NVIDIA</a>.
+          Previously at
+          <a href="https://web.archive.org/web/2/https://freeplay.ai/">Freeplay</a>
+          and <a href="https://replay.io">Replay</a>, with open-source work on
+          <a href="https://github.com/redwoodjs/redwood">RedwoodJS</a>.
+        </p>
+        <p>
+          Most of the work is moving the fix one level up &mdash; closer to
+          the cause, further from the symptom. Based in Boulder, Colorado.
+        </p>
+      </section>
 
-        <div class="portfolio-projects">
-          <div class="portfolio-project">
-            <div class="portfolio-project-description">
-              <h2>RedwoodJS</h2>
-              <div class="project-meta">
-                <p class="portfolio-project-side-info">
-                  A full-stack web framework for startups.
-                </p>
-                <div class="portfolio-project-tags">
-                  <span>TypeScript</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-project">
-            <div class="portfolio-project-description">
-              <h2>Teamstream.gg</h2>
-              <div class="project-meta">
-                <p class="portfolio-project-side-info">
-                  A platform to organize and watch ESports tournaments.
-                </p>
-                <div class="portfolio-project-tags">
-                  <span>RedwoodJS</span>
-                  <span>React</span>
-                  <span>GraphQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-project">
-            <div class="portfolio-project-description">
-              <h2>Tape.sh</h2>
-              <div class="project-meta">
-                <p class="portfolio-project-side-info">
-                  macOS app to record the screen and get sharable link with just
-                  a click.
-                </p>
-                <div class="portfolio-project-tags">
-                  <span>RedwoodJS</span>
-                  <span>React</span>
-                  <span>GraphQL</span>
-                  <span>Electron</span>
-                  <span>Next.js</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-project">
-            <div class="portfolio-project-description">
-              <h2>Tourio</h2>
-              <div class="project-meta">
-                <p class="portfolio-project-side-info">
-                  A location-aware audio guide mobile app for various tourist
-                  spots.
-                </p>
-                <div class="portfolio-project-tags">
-                  <span>Java</span>
-                  <span>React</span>
-                  <span>GraphQL</span>
-                  <span>Electron</span>
-                  <span>Next.js</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <nav class="links" aria-label="Links">
+        <a href="/work">Work <span class="arrow" aria-hidden="true">↗</span></a>
+        <a href="https://github.com/callingmedic911" rel="me">GitHub</a>
+        <a href="https://blog.adityaworks.com">Writing</a>
+        <a href="https://www.linkedin.com/in/aditya-pandey/" rel="me">LinkedIn</a>
+        <a href="mailto:aditya.pandey@colorado.edu">Email</a>
+      </nav>
+    </main>
 
-        <a class="button view-portfolio" href="/portfolio"
-          >View detailed portfolio</a
-        >
-      </div>
-    </div>
-    <hr class="footnote-divider" />
-    <ol start="0" class="footnotes">
-      <li>https://blog.adityaworks.com</li>
-      <li>https://github.com/callingmedic911</li>
-      <li>https://twitter.com/callingmedic911</li>
-      <!-- <li>https://mastodon.social/@callingmedic911</li> -->
-      <li>https://www.linkedin.com/in/aditya-pandey/</li>
-      <li>aditya@autospace.co</li>
-      <li>https://adityaworks.com/portfolio</li>
-    </ol>
+    <footer>
+      <span class="meta">Boulder · 2026</span>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-auto" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="8" cy="8" r="6" />
+          <path d="M8 2a6 6 0 010 12" fill="currentColor" stroke="none" />
+        </svg>
+        <svg class="icon-light" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="8" cy="8" r="3" />
+          <path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.5 3.5l1.4 1.4M11.1 11.1l1.4 1.4M3.5 12.5l1.4-1.4M11.1 4.9l1.4-1.4" />
+        </svg>
+        <svg class="icon-dark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M13 9.5A5.5 5.5 0 016.5 3a5.5 5.5 0 106.5 6.5z" />
+        </svg>
+        <span id="theme-label">auto</span>
+      </button>
+    </footer>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById("theme-toggle");
+        var label = document.getElementById("theme-label");
+
+        function current() {
+          var t = localStorage.getItem("theme");
+          return t === "light" || t === "dark" ? t : "auto";
+        }
+
+        function apply(mode) {
+          if (mode === "auto") {
+            root.removeAttribute("data-theme");
+            localStorage.removeItem("theme");
+          } else {
+            root.setAttribute("data-theme", mode);
+            localStorage.setItem("theme", mode);
+          }
+          label.textContent = mode;
+          btn.setAttribute("data-mode", mode);
+        }
+
+        var initial = current();
+        label.textContent = initial;
+        btn.setAttribute("data-mode", initial);
+
+        btn.addEventListener("click", function () {
+          var c = current();
+          apply(c === "auto" ? "light" : c === "light" ? "dark" : "auto");
+        });
+      })();
+    </script>
+
+    <script>
+      // Name-as-instrument: click → audio plays + syllables light up in sync.
+      (function () {
+        var audio = document.getElementById("name-audio");
+        var nameBtn = document.getElementById("name-play");
+        var pronounce = document.getElementById("pronounce");
+        if (!audio || !nameBtn) return;
+
+        // Syllable schedule (seconds). Tuned for the 1.94s "Aditya Pandey." clip.
+        // index 0..3 corresponds to data-i on .syllable and .syl
+        // Timings measured from the actual clip (silencedetect).
+        // Anticipated by ~30ms so the highlight visually leads the phoneme.
+        var SCHEDULE = [
+          { i: 0, start: 0.14, end: 0.46 },  // Adi   (0.17-0.43)
+          { i: 1, start: 0.46, end: 0.68 },  // tya   (0.51-0.63)
+          { i: 2, start: 0.68, end: 0.87 },  // Pan   (0.71-0.87)
+          { i: 3, start: 0.87, end: 1.08 },  // dey   (0.87-1.04)
+        ];
+
+        var nameSyls = nameBtn.querySelectorAll(".syllable");
+        var pronSyls = pronounce.querySelectorAll(".syl");
+        var raf = 0;
+
+        function clearActive() {
+          nameSyls.forEach(function (s) { s.classList.remove("is-active"); });
+          pronSyls.forEach(function (s) { s.classList.remove("is-active"); });
+        }
+
+        function highlight(i) {
+          clearActive();
+          if (i < 0) return;
+          nameSyls.forEach(function (s) {
+            if (Number(s.dataset.i) === i) s.classList.add("is-active");
+          });
+          pronSyls.forEach(function (s) {
+            if (Number(s.dataset.i) === i) s.classList.add("is-active");
+          });
+        }
+
+        function tick() {
+          var t = audio.currentTime;
+          var active = -1;
+          for (var k = 0; k < SCHEDULE.length; k++) {
+            if (t >= SCHEDULE[k].start && t < SCHEDULE[k].end) {
+              active = SCHEDULE[k].i;
+              break;
+            }
+          }
+          highlight(active);
+          if (!audio.paused && !audio.ended) {
+            raf = requestAnimationFrame(tick);
+          }
+        }
+
+        function play() {
+          audio.currentTime = 0;
+          nameBtn.classList.add("is-playing");
+          pronounce.classList.add("is-playing");
+          var p = audio.play();
+          if (p && p.catch) p.catch(function () { stop(); });
+          cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(tick);
+        }
+
+        function stop() {
+          cancelAnimationFrame(raf);
+          nameBtn.classList.remove("is-playing");
+          pronounce.classList.remove("is-playing");
+          clearActive();
+        }
+
+        nameBtn.addEventListener("click", play);
+        audio.addEventListener("ended", stop);
+        audio.addEventListener("pause", function () {
+          if (audio.ended) return;
+          stop();
+        });
+
+        // Adi button — separate short clip
+        var adiBtn = document.getElementById("adi-play");
+        var adiAudio = document.getElementById("adi-audio");
+        if (adiBtn && adiAudio) {
+          adiBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            adiAudio.currentTime = 0;
+            adiBtn.classList.add("is-playing");
+            var p = adiAudio.play();
+            if (p && p.catch) p.catch(function () {
+              adiBtn.classList.remove("is-playing");
+            });
+          });
+          adiAudio.addEventListener("ended", function () {
+            adiBtn.classList.remove("is-playing");
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
